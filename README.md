@@ -14,7 +14,7 @@ os = UaUtils::OperatingSystem.new(user_agent_string)
 Operating systems
 -----------------
 Following operating systems can be detected:  
-windows, windows_phone, mac os x, iOS, android, bada, meego, symbian  
+windows, windows phone, mac os x, iOS, android, bada, meego, symbian  
 
 Devices
 -------
