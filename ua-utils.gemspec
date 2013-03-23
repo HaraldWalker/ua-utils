@@ -5,7 +5,8 @@ require 'ua-utils'
 Gem::Specification.new do |s|
   s.name         = 'ua-utils'
   s.version      = UaUtils::VERSION
-  s.authors       = %w('Harald Walker')
+  s.platform     = Gem::Platform::RUBY
+  s.authors      = %w('Harald Walker')
   s.email        =  %w('harald.walker@gmail.com')
   s.homepage     = 'https://github.com/HaraldWalker/ua-utils'
   s.summary      = 'Utilities to parse user-agent strings.'
