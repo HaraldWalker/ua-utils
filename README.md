@@ -5,9 +5,22 @@ Utilities to parse user-agent strings.
 
 First implementation is mainly focusing on most common operating systems and device types, so that content can be optimized.
 
-Usage
------
-user_agent = UserAgent.new(user_agent_string)  
+## Usage
+
+### Rails
+
+In your Gemfile:
+
+```ruby
+gem 'ua-utils'
+```
+
+`bundle install` and restart your server to make the files available.
+
+
+### Example
+
+user_agent = UaUtils::UserAgent.new(user_agent_string)  
 or  
 os = UaUtils::OperatingSystem.new(user_agent_string)  
 
