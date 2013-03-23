@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ua-utils (0.3.1)
+    ua-utils (0.3.2)
 
 GEM
   remote: https://rubygems.org/

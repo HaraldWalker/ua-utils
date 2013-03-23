@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.authors      = %w('Harald Walker')
   s.email        =  %w('harald.walker@gmail.com')
   s.homepage     = 'https://github.com/HaraldWalker/ua-utils'
-  s.summary      = 'Utilities to parse user-agent strings.'
-  s.description  = File.read(File.join(File.dirname(__FILE__), 'README.md'))
+  s.summary      = 'Utility for parsing and handling user-agent strings.'
+  s.description  = gem.summary
 
   s.files         = Dir['{bin,lib,spec}/**/*'] + %w(LICENSE README.md)
   s.test_files    = Dir['spec/**/*']
