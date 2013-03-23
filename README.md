@@ -33,3 +33,7 @@ windows, windows phone, mac os x, iOS, android, bada, meego, symbian
 Following device types can be detected:  
 desktop, tablet, mobile, tv, bot  
 
+## Documentation
+
+http://rubydoc.info/github/HaraldWalker/ua-utils/frames/file/README.md
+
