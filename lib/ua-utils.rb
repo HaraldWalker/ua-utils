@@ -3,7 +3,7 @@ require 'ua-utils/operating_system'
 
 module UaUtils
 
-  VERSION = '0.3.0'
+  VERSION = '0.3.1'
 
   def self.logger
     @logger ||= (rails_logger || default_logger)
