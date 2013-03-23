@@ -1,5 +1,4 @@
-UA-UTILS
-========
+# UA-UTILS
 
 Utilities to parse user-agent strings.
 
@@ -24,13 +23,13 @@ user_agent = UaUtils::UserAgent.new(user_agent_string)
 or  
 os = UaUtils::OperatingSystem.new(user_agent_string)  
 
-Operating systems
------------------
+## Operating systems
+
 Following operating systems can be detected:  
 windows, windows phone, mac os x, iOS, android, bada, meego, symbian  
 
-Devices
--------
+## Devices
+
 Following device types can be detected:  
 desktop, tablet, mobile, tv, bot  
 
