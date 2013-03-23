@@ -7,17 +7,17 @@ First implementation is mainly focusing on most common operating systems and dev
 
 Usage
 -----
-user_agent = UserAgent.new(user_agent_string)
-or
-os = UaUtils::OperatingSystem.new(user_agent_string)
+user_agent = UserAgent.new(user_agent_string)  
+or  
+os = UaUtils::OperatingSystem.new(user_agent_string)  
 
 Operating systems
 -----------------
-Following operating systems can be detected:
-windows, windows_phone, mac os x, iOS, android, bada, meego, symbian
+Following operating systems can be detected:  
+windows, windows_phone, mac os x, iOS, android, bada, meego, symbian  
 
 Devices
 -------
-Following device types can be detected:
-desktop, tablet, mobile, tv, bot
+Following device types can be detected:  
+desktop, tablet, mobile, tv, bot  
 
