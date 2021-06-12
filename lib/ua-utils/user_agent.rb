@@ -17,8 +17,6 @@ module UaUtils
   #
   class UserAgent
 
-    attr_reader :os
-
     # Initializes a user agent for parsing with a given user agent string
     # @param [Object] user_agent_string
     def initialize(user_agent_string)

@@ -1,5 +1,6 @@
-module UaUtils
+# frozen_string_literal: true
 
+module UaUtils
   # The operating system that can be detected based on the user agent string.
   #
   # === Example
@@ -16,7 +17,6 @@ module UaUtils
   #   end
 
   class OperatingSystem
-
     attr_reader :platform, :device
 
     # Initializes operating system for parsing with the given user agent string.
@@ -56,25 +56,23 @@ module UaUtils
 
     private
 
-      def detect_device(ua_string) #:nodoc:
-        case ua_string
-          when /(windows nt).*(touch)/i                         ; return :windows, :tablet
-          when /windows nt/i                                    ; return :windows, :desktop
-          when /ipad/i                                          ; return :ios, :tablet
-          when /iphone/i                                        ; return :ios, :mobile
-          when /mac os x/i                                      ; return :macosx, :desktop #after ios
-          when /android(?!.*kindle).*(mobile safari)/i          ; return :android, :mobile
-          when /(android).*(safari)/i                           ; return :android, :tablet #after mobile android
-          when /windows phone/i                                 ; return :windows_phone, :mobile
-          when /bada/i                                          ; return :bada, :mobile
-          when /meego/i                                         ; return :meego, :mobile
-          when /symbian|s60/i                                   ; return :symbian, :mobile
-          when /googletv/i                                      ; return :android, :tv
-          when /bot/i                                           ; return :unknown, :bot
-          else                                                  ; return :unknown, :unknown
-        end
+    def detect_device(ua_string) #:nodoc:
+      case ua_string
+      when /(windows nt).*(touch)/i then %i[windows tablet]
+      when /windows nt/i then %i[windows desktop]
+      when /ipad/i then %i[ios tablet]
+      when /iphone/i then %i[ios mobile]
+      when /mac os x/i then %i[macosx desktop] # after ios
+      when /android(?!.*kindle).*(mobile safari)/i then %i[android mobile]
+      when /(android).*(safari)/i then %i[android tablet] # after mobile android
+      when /windows phone/i then %i[windows_phone mobile]
+      when /bada/i then %i[bada mobile]
+      when /meego/i then %i[meego mobile]
+      when /symbian|s60/i then %i[symbian mobile]
+      when /googletv/i then %i[android tv]
+      when /bot/i then %i[unknown bot]
+      else; %i[unknown unknown]
       end
-
+    end
   end
-
 end
