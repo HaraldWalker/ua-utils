@@ -4,6 +4,8 @@ Utilities to parse user-agent strings.
 
 First implementation is mainly focusing on most common operating systems and device types, so that content can be optimized.
 
+[![Ruby](https://github.com/HaraldWalker/ua-utils/actions/workflows/ruby.yml/badge.svg)](https://github.com/HaraldWalker/ua-utils/actions/workflows/ruby.yml)
+
 ## Usage
 
 ### Rails
